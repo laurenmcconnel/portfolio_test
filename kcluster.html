@@ -1,0 +1,146 @@
+
+<html>
+	<head>
+		<title>Business Analytics Portfolio by Lauren McConnell</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+								<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong> Business Analytics Portfolio</strong> by Lauren McConnell</a>
+									<ul class="icons">
+									  	<li><a href="https://www.linkedin.com/in/laurenmccconnell/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+									  	<li><a href="https://github.com/laurenmcconnel" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">x-Twitter</span></a></li>
+										<li><a href='mailto:lauren.mcconnell9@mail.dcu.ie' class="icon solid fa-envelope"> </a></li>
+										  
+										<li><a href='tel:+353870673957' class="icon solid fa-phone"> </a></li>
+										
+										<li><a href="LaurenMcConnell_CV.pdf" class="icon solid fa-file" target="_blank"> </a></li>
+			
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Using K-Means Clustering for Customer Segmentation</h1>
+									</header>
+
+									<span class="image main"><img src="images/kmeans.jpg" alt="" /></span>
+
+									<p>I participated in a group project with five others where we analysed the use of unsupervised learning in customer segmentation. We imported a Dataset from GitHub and cleaned it, used feature engineering and chose an unsupervised learning model to group the data, we used K-Means Clustering. We then outlined our findings and the limitations of the model. We used python IDE for our analysis.</p>
+										<span class="image main"><img src="images/kmeans.jpg" alt="" /></span>
+							
+		<hr class="major" />
+
+									<h2>Data Cleaning</h2>
+									<p>We converted our database to a pandas data frame and removed outliers and impossible values. We then used z-score and interquartile range to make the data more accurate. We then removed any duplicate entries, as this could result in errors in the clustering accuracy. We then created a correlation matrix to help avoid misinterpretation of our data.</p>
+										<span class="image main"><img src="images/kmeans.jpg" alt="" /></span>
+									
+									<hr class="major" />
+
+									<h2>Feature Engineering</h2>
+									<p>Once the data has been cleaned, we move onto feature engineering, we will use Recency, Frequency and Monetary (RFM) analysis. we will need to create features measuring the time since the last transaction for each customer ID (Recency), total transactions for each customer ID (Frequency) and total spent for each customer ID (Monetary).</p>  
+
+                  <p>First, we will visualise the outliers with boxplots and then use the interquartile range method to remove outliers.</p>
+				
+					<span class="image main"><img src="images/kmeans.jpg" alt="" /></span>
+
+									<hr class="major" />
+
+									<h2>K-Means Clustering)</h2>
+									<p>We used customer behavioural data to group customers based on similarities. First, the optimal number of clusters needed to be found, we used the elbow method for this and identified 3 as optimal.</p>
+									
+										<span class="image main"><img src="images/kmeans.jpg" alt="" /></span>
+										
+									<p>Using the optimal number of clusters we can fit the k-means model to our standardised data set. This will group each customer in one of the 3 clusters, we take these cluster labels and add them to the RFM tables to begin visualizing the clusters.</p>
+									
+	<span class="image main"><img src="images/kmeans.jpg" alt="" /></span>
+	
+		<h2>Findings</h2>
+									<p>We used boxplots to analyse our RFM groupings. Clustered by Recency, Frequency and Monetary. This allowed us to identify three groups of consumers, once-off buyers (0), customers (1) and very loyal customers (2). This is very clearly seen in the 'Frequency and Monetary cluster graphs as clusters '2' are spending the most money and visit the site most frequently.</p>
+									
+										<span class="image main"><img src="images/kmeans.jpg" alt="" /></span>
+	
+	<h2>Limitations</h2>
+									<ul>
+									  <li>One of the primary limitations of K-means clustering is its sensitivity to outliers in the dataset. To mitigate this limitation, we have implemented code to remove outliers by defining z-scores and interquartile ranges. </li>
+ <li>K-means clustering assigns data points to one cluster only. In the real world, some data points may belong to multiple clusters. </li>
+ <li>By setting an initial number of clusters to three using the elbow method, we potentially limit the outcome of our algorithm as we cannot be certain of our choice of clusters. </li></ul>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">About Me</a></li>
+										<li>
+											<span class="opener">Portfolio</span>
+											<ul>
+												<li><a href="Data_Clean.html">Data Cleaning and Feature Engineering</a></li>
+												<li><a href="kcluster.html">K-Means Clustering</a></li>
+												<li><a href="sql.html">DataBase Creation and Manipulation with SQL</a></li>
+												<li><a href="powerbi.html">Power BI Group Collaboration</a></li>
+												<li><a href="entrepreneur.html">The Feasibility of Twitter Sentiment Analysis</a></li>
+											
+											</ul>
+										</li>
+<li><a href="media.html">Media</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="more1.html">More about me</a></li>
+											
+								</nav>
+
+							<!-- Section Get in touch -->
+								<section>
+									<header class="major">
+										<h2>Contact</h2>
+									</header>
+									<p>Please feel free to contact me via the methods below.</p>
+									<ul class="icons">
+									  
+									 
+										<li><a href='mailto:lauren.mcconnell9@mail.dcu.ie' class="icon solid fa-envelope">  lauren.mcconnell9@mail.dcu.ie </a></li>
+										  
+										<li><a href='tel:+353870673957' class="icon solid fa-phone">  (087) 067-3957 </a></li>
+										
+										<li class="icon solid fa-home">  Dunboyne, Co. Meath                 </li>
+										<br>
+										<br>
+											<li><a href="https://www.linkedin.com/in/laurenmccconnell/" class="icon brands fa-linkedin"><span class="label">Linkedin</span> </a></li>
+									  	<li><a href="https://github.com/laurenmcconnel" class="icon brands fa-github"><span class="label">Github</span> </a></li>
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">x-Twitter</span> </a></li>
+									</ul>
+								</section>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
